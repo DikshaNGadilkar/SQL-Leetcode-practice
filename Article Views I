@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+#Write a solution to find all the authors that viewed at least one of their own articles.
+select  distinct author_id as id
+from views  
+where viewer_id=author_id
+order by id;
+
+link:https://leetcode.com/problems/article-views-i/?envType=study-plan-v2&envId=top-sql-50
